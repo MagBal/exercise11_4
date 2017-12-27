@@ -1,8 +1,8 @@
-function Phone(/*brand, */price, /* color, */discount) {
+function Phone(/*brand, */price/*, color*/) {
     //this.brand = brand;
     this.price = price;
     //this.color = color;
-    this.discount = discount;
+    
 
 }
 
@@ -17,11 +17,10 @@ function Phone(/*brand, */price, /* color, */discount) {
 Phone.prototype.printInfo = function() {
     console.log(this.price);  
 }
-
 Phone.prototype.applyDiscount = function(discount) {
-    this.discount = discount;
-    console.log(this.price-this.discount);
+	this.price = this.price - discount;
 }
+
 
 /*Dimensions.prototype.showDimensions = function() {
     console.log('The ' + this.type + ' length is ' + this.length + ' mm, width is ' + this.width + ' mm, the thickness is ' + this.thickness + ' mm and the weight is ' + this.weight + ' g.');
@@ -38,6 +37,10 @@ onetPlusOne.printInfo();
 samsungGalaxyS6.applyDiscount(100);
 iPhone6S.applyDiscount(150);
 onetPlusOne.applyDiscount(99);
+
+samsungGalaxyS6.printInfo();
+iPhone6S.printInfo();
+onetPlusOne.printInfo();
 
 /*samsungGalaxyS6 = new Dimensions('Samsung Galaxy S6', 1500, 600, 8, 150);
 iPhone6S = new Dimensions('iPhone 6S', 1900, 900, 10, 200);
