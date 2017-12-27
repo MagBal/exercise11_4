@@ -2,9 +2,7 @@ function Phone(/*brand, */price/*, color*/) {
     //this.brand = brand;
     this.price = price;
     //this.color = color;
-    
-
-}
+ }
 
 /*function Dimensions(type, length, width, thickness, weight) {
     this.type = type;
@@ -20,7 +18,6 @@ Phone.prototype.printInfo = function() {
 Phone.prototype.applyDiscount = function(discount) {
 	this.price = this.price - discount;
 }
-
 
 /*Dimensions.prototype.showDimensions = function() {
     console.log('The ' + this.type + ' length is ' + this.length + ' mm, width is ' + this.width + ' mm, the thickness is ' + this.thickness + ' mm and the weight is ' + this.weight + ' g.');
